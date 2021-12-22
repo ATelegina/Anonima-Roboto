@@ -44,7 +44,7 @@ def send_welcome(message):
     time.sleep(1)
     bot.send_message(message.chat.id, "Ĵetu viajn galantvortojn, aĉulo")
     
-@bot.message_handler(commands=['idilo'])
+@bot.message_handler(commands=['idilo', 'IDILO'])
 def sendu_idilon(message):
     bot.reply_to(message, "Idilo de la babilejo: {}".format(message.chat.id)) 
     
